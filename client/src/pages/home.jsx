@@ -37,8 +37,8 @@ const Home = () => {
         const result = await response.json();
         setAllPosts(result.data.reverse());
       }
-    } catch (err) {
-      alert(err);
+    } catch (error) {
+      alert(error);
     } finally {
       setLoading(false);
     }
